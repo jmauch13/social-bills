@@ -1,39 +1,136 @@
-.App {
+.header {
+  background-color: #67c531;
+  margin-left: -2%;
+}
+
+.mt-1 {
+  color: white;
+}
+
+.ms-5 {
+  margin-left: 0;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+}
+
+#link {
+  color: white;
+}
+
+.ms-auto {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+
+}
+
+.app-title {
+  text-align: center;
+  margin-top: 10px;
+  color: #67c531;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 3.5em;
+}
+
+.gif {
+  margin-top: 100px;
+}
+
+.home-text {
+  text-align: center;
+  margin-left: 10px;
+  color: #67c531;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 1.5em;
+}
+
+.bill-container {
+  margin-top: 7%;
+  background-color: #67c531;
+}
+
+.bill-text {
+  margin-right: 60px;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 1.1em;
+  padding-top: 55px;
+}
+
+.gif {
+  margin-top: -5%;
+}
+
+/* Create new post */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+/* Social details */
+.social-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.social-details div {
+  margin: 20px 0;
+}
+.social-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Post details list */
+.post-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.post-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.post-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.post-preview a {
+  text-decoration: none;
 }
