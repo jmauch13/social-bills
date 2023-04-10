@@ -9,6 +9,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/dollar-sign-green-vector.webp';
+import UserLoginForm from '../features/user/UserLoginForm';
 
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
             <NavbarBrand className='ms-5' href='/'>
             <img src={logo} alt='logo' className='logo' />
             </NavbarBrand>
-            <NavbarToggler className='fa fa-bars' style={{color: 'white', width: '40px', height: '25px'}} onClick={() => setMenuOpen(!menuOpen)}/>
+            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar>
                     <NavItem>
@@ -38,11 +39,12 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' id='link' to='/contact'>
-                            Contact
+                        <NavLink className='nav-link' id='link' to='/forum'>
+                            Forum
                         </NavLink>
                     </NavItem>
                 </Nav>
+                <UserLoginForm />
             </Collapse>
         </Navbar>
     );

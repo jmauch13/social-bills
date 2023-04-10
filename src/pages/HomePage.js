@@ -25,6 +25,15 @@ const HomePage = () => {
                 </Col>
             </Row>
         </Container>
+
+        <Container className='link-btns'>
+            <Row>
+                <a href="/signup"><button className='btn1'>Signup</button></a>
+            </Row>
+            <Row>
+                <a href="/learn"><button className='btn2'>Learn More</button></a>
+            </Row>
+        </Container>
         
         </div>
     );

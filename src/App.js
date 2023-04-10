@@ -3,9 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
-import Social from './social/Social';
-import Create from './social/Create';
-import SocialDetails from './social/SocialDetails';
+import ForumPage from './pages/ForumPage';
+//import ForumModal from './features/forum/ForumModal';
+import Learn from './pages/Learn';
 
 function App() {
   return (
@@ -13,10 +13,9 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/social' element={<Social />} />
-        <Route path='/create' element={<Create />} />
-        <Route path="/posts/:id" element={<SocialDetails />} />
-              
+        <Route path='/learn' element={<Learn />} />
+        <Route path='/forum' element={<ForumPage />} />
+          
       </Routes>
     </div>
 

@@ -18,16 +18,20 @@
 
 #link {
   color: white;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+#link:hover {
+  text-decoration: underline;
 }
 
 .ms-auto {
   color: white;
 }
 
-.navbar-toggler-icon {
-  color: white;
 
-}
+/* HomePage */
 
 .app-title {
   text-align: center;
@@ -65,72 +69,75 @@
   margin-top: -5%;
 }
 
-/* Create new post */
-.create {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.create label {
-  text-align: left;
-  display: block;
-}
-.create h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 30px;
-}
-.create input,
-.create textarea,
-.create select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-.create button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
+.link-btns {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Social details */
-.social-details h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 10px;
-}
-.social-details div {
-  margin: 20px 0;
-}
-.social-details button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* Post details list */
-.post-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
-}
-.post-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-}
-.post-preview h2 {
-  font-size: 20px;
-  color: #f1356d;
+.btn1, .btn2 {
+  background-color: #67c531;
   margin-bottom: 8px;
+  width: 150px;
+  height: 40px;
+  border: 2px solid #1a320c;
+  border-radius: 5px;
+  font-size: 18px;
 }
-.post-preview a {
-  text-decoration: none;
+
+/* Forum Page */
+* {
+  box-sizing: border-box;
 }
+.ArticleContainer {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.ArticleContainer h1 {
+  color: #67c531;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 3.5em;
+}
+.AddArticle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.AddArticle input, .AddArticle textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  padding: 5px;
+}
+.AddArticle input[type='submit'] {
+  padding: 5px;
+  background-color: #67c531;
+  border: none;
+  cursor: pointer;
+}
+h1 { text-align: center; }
+article {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 10px auto 20px;
+  width: 100%;
+}
+article h2 {
+  color: rgb(51, 82, 5);
+  font-size: 18px;
+  margin: 5px 0;
+}
+article button {
+  width: 50px;
+  margin: 0 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+article .delete {color: red; width: 60px}
+article .edit {color:green;}
+article .cancel {color: orange;}
