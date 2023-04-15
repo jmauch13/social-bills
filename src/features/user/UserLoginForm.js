@@ -89,7 +89,7 @@ const UserLoginForm = () => {
                                     </ErrorMessage>
                                 </Label>
                             </FormGroup>
-                            <Button type='submit' color='primary'>Login</Button>
+                            <Button type='submit' color='success'>Login</Button>
                         </Form>
                     </Formik>
                 </ModalBody>

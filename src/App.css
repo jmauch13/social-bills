@@ -35,7 +35,7 @@
 
 .app-title {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
   color: #67c531;
   font-family: 'Sedgwick Ave', cursive;
   font-size: 3.5em;
@@ -75,16 +75,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
-.btn1, .btn2 {
+.btn1 {
   background-color: #67c531;
-  margin-bottom: 8px;
   width: 150px;
-  height: 40px;
+  height: 50px;
   border: 2px solid #1a320c;
   border-radius: 5px;
   font-size: 18px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.btn2 {
+  background-color: #67c531;
+  margin-bottom: 8px;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #1a320c;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
 }
 
 /* Forum Page */
@@ -141,3 +154,66 @@ article button {
 article .delete {color: red; width: 60px}
 article .edit {color:green;}
 article .cancel {color: orange;}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control,
+button {
+	padding: 20px;
+	border-radius: 5px;
+}
+
+form button {
+	background-color: #67c531;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.posts-container {
+	margin-top: 50px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.posts {
+  text-align: center;
+  color: #67c531;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 2.5em;
+}
+
+
+.post-card {
+	background-color: rgb(236, 235, 235);
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.post-title {
+  font-size: 1.2em;
+}
+
+
+.delete-btn {
+	margin-top: 10px;
+	background-color: red;
+	color: #fff;
+  text-align: center;
+	border-radius: 5px;
+  width: 200px;
+  height: 35px;
+  padding-top: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
