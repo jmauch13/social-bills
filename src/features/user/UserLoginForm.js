@@ -10,7 +10,7 @@ import {
     Button
 } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../assets/images/dollar-sign-green-vector.webp';
+import defaultAvatar from '../../assets/images/chase.jpeg';
 import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
 
 const UserLoginForm = () => {
